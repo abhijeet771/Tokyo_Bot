@@ -1,7 +1,7 @@
 import AIStudio from "./pages/AIStudio";
 
 function App() {
-  return <AIStudio />;
+  return <AIStudio/>;
 }
 
 export default App;
