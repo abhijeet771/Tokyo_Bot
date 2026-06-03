@@ -1,4 +1,4 @@
-import "./AiStudio.scss";
+import "./AIStudio.scss";
 
 import { useState } from "react";
 
