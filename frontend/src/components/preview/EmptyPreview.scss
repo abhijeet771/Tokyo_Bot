@@ -1,0 +1,190 @@
+.empty-preview {
+  width: 100%;
+
+  min-height: 650px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 40px;
+
+  background: #ffffff;
+
+  border: 1px solid #edf2f7;
+
+  border-radius: 24px;
+
+  box-shadow: 0 10px 30px
+    rgba(15, 23, 42, 0.04);
+
+  &__icon {
+    width: 90px;
+    height: 90px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+      135deg,
+      #9333ea,
+      #ec4899
+    );
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 24px;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: 700;
+
+    color: #111827;
+
+    margin-bottom: 14px;
+  }
+
+  p {
+    max-width: 500px;
+
+    color: #64748b;
+
+    line-height: 1.7;
+
+    font-size: 16px;
+
+    margin-bottom: 32px;
+  }
+}
+
+.preview-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 16px;
+
+  margin-bottom: 40px;
+
+  flex-wrap: wrap;
+}
+
+.preview-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 14px;
+
+  padding: 12px 18px;
+
+  color: #475569;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  svg {
+    color: #9333ea;
+  }
+}
+
+.preview-placeholder {
+  width: 100%;
+
+  max-width: 500px;
+
+  height: 260px;
+
+  border-radius: 20px;
+
+  border: 2px dashed #d8b4fe;
+
+  background: #faf5ff;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  color: #9333ea;
+
+  svg {
+    opacity: 0.7;
+  }
+
+  span {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 768px) {
+  .empty-preview {
+    min-height: 500px;
+
+    padding: 24px;
+
+    h2 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .preview-placeholder {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .empty-preview {
+    min-height: 450px;
+
+    padding: 20px;
+
+    &__icon {
+      width: 70px;
+      height: 70px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+  }
+
+  .preview-steps {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .preview-step {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+  .preview-placeholder {
+    height: 180px;
+
+    span {
+      font-size: 16px;
+    }
+  }
+}

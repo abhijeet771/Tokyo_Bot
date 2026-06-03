@@ -1,0 +1,195 @@
+.upload-section {
+  width: 100%;
+
+  &__title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 12px;
+
+    span {
+      color: #a855f7;
+    }
+  }
+
+  &__subtitle {
+    max-width: 520px;
+
+    font-size: 18px;
+    line-height: 1.7;
+    color: #6b7280;
+
+    margin-bottom: 40px;
+
+    span {
+      color: #a855f7;
+      font-weight: 600;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 18px;
+  }
+
+  &__privacy {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #64748b;
+    font-size: 14px;
+
+    svg {
+      color: #22c55e;
+    }
+  }
+}
+
+.upload-card {
+  flex: 1;
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  padding: 22px;
+
+  border: 1px solid #f1f5f9;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111827;
+
+    margin-bottom: 6px;
+
+    span {
+      margin-left: 6px;
+      font-size: 14px;
+      color: #94a3b8;
+      font-weight: 500;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    color: #94a3b8;
+    margin-bottom: 20px;
+  }
+
+  &__dropzone {
+    height: 150px;
+
+    border: 2px dashed #d8b4fe;
+
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+    margin-bottom: 20px;
+
+    &:hover {
+      background: #faf5ff;
+    }
+
+    svg {
+      color: #a855f7;
+    }
+
+    h4 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #111827;
+    }
+
+    span {
+      color: #94a3b8;
+      font-size: 13px;
+    }
+  }
+
+  &__preview {
+    position: relative;
+
+    width: 120px;
+    height: 120px;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .success-badge {
+      position: absolute;
+
+      top: 8px;
+      right: 8px;
+
+      width: 24px;
+      height: 24px;
+
+      border-radius: 50%;
+
+      background: #22c55e;
+      color: white;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 12px;
+      font-weight: 700;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .upload-section {
+    &__title {
+      font-size: 38px;
+    }
+
+    &__cards {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .upload-section {
+    &__title {
+      font-size: 32px;
+    }
+
+    &__subtitle {
+      font-size: 15px;
+    }
+  }
+
+  .upload-card {
+    padding: 18px;
+
+    &__dropzone {
+      height: 130px;
+    }
+  }
+}

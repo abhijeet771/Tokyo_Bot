@@ -1,0 +1,161 @@
+.overlay-controls {
+  width: 100%;
+
+  background: #171717;
+
+  border-radius: 26px;
+
+  padding: 28px;
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.06);
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 26px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  HEADER                                    */
+/* -------------------------------------------------------------------------- */
+
+.overlay-header h2 {
+  font-size: 28px;
+
+  color: white;
+
+  margin-bottom: 10px;
+
+  font-weight: 700;
+}
+
+.overlay-header p {
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  color: rgba(
+    255,
+    255,
+    255,
+    0.65
+  );
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              CONTROL GROUP                                 */
+/* -------------------------------------------------------------------------- */
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                TOP ROW                                     */
+/* -------------------------------------------------------------------------- */
+
+.control-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+}
+
+.control-top label {
+  font-size: 15px;
+
+  color: white;
+
+  font-weight: 600;
+}
+
+.control-top span {
+  font-size: 14px;
+
+  color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  );
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 RANGE                                      */
+/* -------------------------------------------------------------------------- */
+
+.control-group input[type="range"] {
+  width: 100%;
+
+  appearance: none;
+
+  height: 6px;
+
+  border-radius: 999px;
+
+  background: rgba(
+    255,
+    255,
+    255,
+    0.1
+  );
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              RANGE THUMB                                   */
+/* -------------------------------------------------------------------------- */
+
+.control-group
+  input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+
+  background: white;
+
+  cursor: pointer;
+
+  border: none;
+}
+
+.control-group
+  input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+
+  background: white;
+
+  border: none;
+
+  cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               RESPONSIVE                                   */
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .overlay-controls {
+    padding: 22px 18px;
+
+    gap: 22px;
+  }
+
+  .overlay-header h2 {
+    font-size: 24px;
+  }
+}
